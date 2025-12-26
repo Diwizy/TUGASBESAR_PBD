@@ -382,6 +382,3 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(302)
         self.send_header("Location", p)
         self.end_headers()
-
-print("SERVER JALAN DI: http://localhost:8000")
-HTTPServer(("localhost", 8000), Handler).serve_forever()
